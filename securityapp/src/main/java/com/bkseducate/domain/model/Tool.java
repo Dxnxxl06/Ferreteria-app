@@ -3,7 +3,7 @@ package com.bkseducate.domain.model;
 import java.math.BigDecimal;
 
 public class Tool {
-    private String id;
+    private Long id;
     private String name;
     private String type;
     private String status;
@@ -11,7 +11,7 @@ public class Tool {
     private String providerId; 
     private BigDecimal pricePerDay;
 
-    public Tool (String id, String name, String type, String status, String description, String providerId , BigDecimal pricePerDay) {
+    public Tool (Long id, String name, String type, String status, String description, String providerId , BigDecimal pricePerDay) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -25,11 +25,11 @@ public class Tool {
 
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

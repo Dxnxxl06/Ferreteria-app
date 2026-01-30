@@ -3,7 +3,7 @@ package com.bkseducate.domain.model;
 import java.math.BigDecimal;
 
 public class Payment {
-    private String id;
+    private Long id;
     private String rentalId;
     private String paymentDate;
     private String paymentMethod;
@@ -22,11 +22,11 @@ public class Payment {
 
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

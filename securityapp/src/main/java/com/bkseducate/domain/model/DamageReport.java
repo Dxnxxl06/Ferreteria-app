@@ -3,12 +3,12 @@ package com.bkseducate.domain.model;
 import java.math.BigDecimal;
 
 public class DamageReport {
-    private String id;
+    private Long id;
     private String rentalId;
     private String damageDescription;
     private BigDecimal damageCost;
 
-    public DamageReport(String id, String rentalId, String damageReport, BigDecimal damageCost, String damageDescription) {
+    public DamageReport(Long id, String rentalId, String damageReport, BigDecimal damageCost, String damageDescription) {
         this.id = id;
         this.rentalId = rentalId;
         this.damageCost = damageCost;
@@ -20,11 +20,11 @@ public class DamageReport {
 
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
