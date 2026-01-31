@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 
 public class Rental {
-    private String id;
+    private Long id;
     private String userId;
     private String toolId;
     private LocalDate rentalDate;
@@ -12,7 +12,7 @@ public class Rental {
     private String rentalStatus;
     private double totalAmount;
 
-    public Rental(String id, String userId, String toolId, LocalDate rentalDate, LocalDate returnDate, String rentalStatus, double totalAmount) {
+    public Rental(Long id, String userId, String toolId, LocalDate rentalDate, LocalDate returnDate, String rentalStatus, double totalAmount) {
         this.id = id;
         this.userId = userId;
         this.toolId = toolId;
@@ -29,11 +29,11 @@ public class Rental {
 
     
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
